@@ -1,5 +1,5 @@
 public class Main {
-    public static void determinesTheYear(int year) {
+    public static void checkingLeapYear(int year) {
         if (year > 1584 && ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))) {
             System.out.println(year + " год - високосный год");
         } else {
@@ -34,7 +34,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1");
         int year = 2025;
-        determinesTheYear(year);
+        checkingLeapYear(year);
         System.out.println("Задача 2");
         int clientOS = 1;
         int clientDiviceYear = 2016;
